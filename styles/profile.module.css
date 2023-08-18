@@ -1,0 +1,139 @@
+.goBack {
+    background-color: rgba(0,0,255,0.5);
+    border: 1% ;
+    border-color: rgb(9, 9, 120);
+    border-radius: 20px;
+    margin: 1%;
+    font-size: 100%;
+    margin-bottom:20px ;
+    margin-top: 85px;
+}
+
+.profile_container {
+    box-sizing: border-box;
+    width: 96vw;
+    border: 3px black solid;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    height: fit-content;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.picture_desc {
+    display: flex;
+    flex-direction: row;
+}
+
+.desc, .biography {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 3vw;
+    width: 62vw;
+    margin-left: 3vw;
+    margin-top: 3vw;
+    margin-bottom: 5vw;
+    border: 2px black solid;
+}
+
+.picture {
+    display: flex;
+    height: 24vw;
+    width: 24vw;
+    box-sizing: border-box;
+    margin-left: 3vw;
+    margin-top: 3vw;
+    margin-bottom: 5vw;
+    border-radius: 6vw;
+    border: 2.7px black solid;
+    overflow: hidden;
+}
+
+.custom_title_container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 2.2vw;
+    padding-top: 1.5vw;
+    gap: 1vw;
+}
+
+.custom_title, .subtitle, .content {
+    display: inline;
+}
+
+.subtitle, .bio_subtitle {
+    font-style: italic;
+    font-size: 1.7vw;
+    color:rgba(0,0,0,0.6);
+}
+
+.content, .bio_content {
+    font-size: 2vw;
+}
+
+.status_container, .status_picture {
+    display: flex;
+    flex-direction: row;
+}
+
+.status_container {
+    height: fit-content;
+    align-items: center;
+}
+
+.status_picture {
+    display: flex;
+    height: 9vw;
+    width: 9vw;
+    box-sizing: border-box;
+    margin-right: 2vw;
+}
+
+.status_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.biography {
+    margin-top: 0;
+    padding: 2vw;
+    width: auto;
+    margin-right: 3vw;
+}
+
+.bio_subtitle {
+    text-indent: 20px;
+    margin-bottom: 10px;
+}
+
+.bio_content {
+    text-indent: 45px;
+}
+
+@media (max-width: 720px) {
+    .content {
+        font-size: 14.4px;
+        display: block;
+    }
+
+    .subtitle {
+        display: block;
+        font-size: 12.24px;
+    }
+
+    .status_picture {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media (max-width: 492px) {
+    .picture_desc {
+        flex-direction: column;
+        align-items: center;        
+    }
+}

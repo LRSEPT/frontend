@@ -1,0 +1,10 @@
+.all {
+    padding: 2%;
+    margin: 0.5% 2%;
+}
+
+#title { 
+    font-style: italic;
+    font-size: 1.5em;
+    text-decoration: none;
+}

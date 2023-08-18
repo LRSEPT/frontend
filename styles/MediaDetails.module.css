@@ -1,0 +1,129 @@
+.media_container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0,0,255,0.4);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.visual_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.all_images, .all_videos {
+    height: 600px;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 60vw;
+    padding-top: 10px;
+    padding-left: 10px;
+    overflow-x: auto;
+    gap: 10px;
+    border-radius: 7px;
+    border: solid 3px rgb(53, 25, 102);
+    background-color: #fff;
+}
+
+.image_container {
+    width: 600px;
+    height: fit-content;
+    border: 2px solid;
+    padding-bottom: 10px;
+    border-radius: 13px;
+    margin-bottom: 10px;
+    background-color: rgba(0,0,0,0.15);
+}
+
+.single_image, .single_video {
+    width: 600px;
+    border-radius: 10px 10px 0 0;
+    border: 2px solid;
+}
+
+.single_video {
+    width: 596.5px;
+}
+
+.single_image:hover, .single_video:hover {
+    transform: scale(1.005);
+    cursor: pointer;
+    opacity: 0.97;
+}
+
+.image_title {
+    color: blue;
+    font-size: 1.5em;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 10px;
+    text-indent: 7px;
+    line-height: 1.2;
+}
+
+.all_videos {
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+
+.audio_file_container {
+    display: flex;
+    flex-direction: column;
+    width: 27vw;
+    margin-left: 2vw;
+}
+
+.all_files, .all_audios {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: inherit;
+    height: 360px;
+    padding-top: 6  px ;
+    padding-bottom: 6px;
+    border-radius: 7px;
+    border: solid 3px rgb(53, 25, 102);
+    overflow-y: auto;
+    white-space: normal;
+}
+
+.file_title, .audio_title {
+    margin-top: 3px;
+    padding-left: 8px;
+    text-indent: 10px;
+}
+
+.single_file, .single_audio {
+    width: 340px;
+    box-sizing: border-box;
+    font-size: 1.3em;
+    color: blue;
+}
+
+.single_file:hover, .single_audio:hover, .image_title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.files_counter, .audios_counter {
+    font-size: 1.4em;
+    padding-left: 18px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding-top: 2px;
+    margin-bottom: 4px;
+    border-bottom: 3px double;
+    padding-bottom: 4px;
+}
+
+.audio_container {
+    margin-top: 5px;
+}
+
+@media (max-width : 1000px) {
+    .single_image, .single_video {
+        height: auto;
+        width: 50vw;
+    }
+}
