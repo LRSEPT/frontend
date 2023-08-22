@@ -15,10 +15,8 @@ export default function Id({post}) {
   )
 }
 
-//127.0.0.1
-
 const instanceAxios = Axios.create({
-  baseURL: 'http://localhost:1337/api',
+  baseURL: 'http://127.0.0.1:1337/api',
 })
 
 export const getServerSideProps = async (context) => {

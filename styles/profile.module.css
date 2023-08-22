@@ -114,6 +114,17 @@
     text-indent: 45px;
 }
 
+.status_link {
+    color: blue; 
+    cursor: pointer;
+    font-size: 2vw;
+    display: inline;
+}
+
+.status_link:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 720px) {
     .content {
         font-size: 14.4px;
